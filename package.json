@@ -2,7 +2,7 @@
 {
   "name": "react-native-sclalert-wrapper",
   "version": "1.0.0",
-  "description": "",
+  "description": "SCLAlertView wrapper",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,11 +10,10 @@
   "keywords": [
     "react-native"
   ],
-  "author": "",
-  "license": "",
+  "author": "Viktor Radchenko, Sherzod Max, Bilawal Hameed, Riz Joj, Kazuki Sato",
+  "license": "MIT",
   "peerDependencies": {
     "react-native": "^0.41.2",
     "react-native-windows": "0.41.0-rc.1"
-
   }
 }

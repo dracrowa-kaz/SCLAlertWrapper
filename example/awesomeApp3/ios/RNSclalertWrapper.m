@@ -66,8 +66,8 @@ RCT_EXPORT_METHOD(showSCLAlertWithThreeButtons:(NSString *)type
     SCLAlertView *alert = [[SCLAlertView alloc] init];
     AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
     UIViewController *ctrl = appDelegate.window.rootViewController;
-
-
+    
+    
     [alert addButton:firstButtonTitle actionBlock:^(void) {
         callback(@[@0]);
     }];
@@ -90,8 +90,8 @@ RCT_EXPORT_METHOD(showSCLAlertWithTwoButtons:(NSString *)type
     SCLAlertView *alert = [[SCLAlertView alloc] init];
     AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
     UIViewController *ctrl = appDelegate.window.rootViewController;
-
-
+    
+    
     [alert addButton:firstButtonTitle actionBlock:^(void) {
         callback(@[@0]);
     }];
@@ -110,12 +110,13 @@ RCT_EXPORT_METHOD(showSCLAlert:(NSString *)type
     SCLAlertView *alert = [[SCLAlertView alloc] init];
     AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
     UIViewController *ctrl = appDelegate.window.rootViewController;
-
+    
     [alert addButton:closeButtonTitle actionBlock:^(void) {
         callback(@[@"closed"]);
     }];
-
+    
     [self showAlert: alert ctrl:ctrl title:title subTitle:subTitle type:type];
 }
 
 @end
+  

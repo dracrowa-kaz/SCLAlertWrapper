@@ -1,0 +1,6 @@
+framework module Pods_awesomeApp3 {
+  umbrella header "Pods-awesomeApp3-umbrella.h"
+
+  export *
+  module * { export * }
+}
